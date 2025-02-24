@@ -11,17 +11,19 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <Navbar />
-      <div>
-        <h1>My React Portfolio</h1>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+      <div className="wrapper">
+        <Navbar />
+        <div className="content">
+          <h1>My React Portfolio</h1>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+        <Footer />
       </div>
-      <Footer /> {/* Footer appears below all pages */}
     </Router>
   );
 }
