@@ -12,32 +12,21 @@ body {
     background-repeat: no-repeat;
     color: white;
     margin: 0;
-    padding-top: 80px; /* Adjust this value based on navbar height */
-    padding: 0;
+    padding-top: 120px; /* Increased spacing to push content below navbar */
     font-family: Arial, sans-serif;
-  }  
-  
-  
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
   }
   
-  .content {
-    flex: 1;
-    text-align: center;
-  }
-  
-  /* Navbar Styling */
+  /* Navbar */
   .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 15px 0;
-    text-align: center;
+    height: 80px; /* Adjusted for better spacing */
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent dark effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 1000;
   }
   
@@ -50,14 +39,15 @@ body {
   }
   
   .nav-links li {
-    display: inline;
+    display: inline-block;
   }
   
   .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 26px;
     font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Added shadow for readability */
     transition: 0.3s;
   }
   
@@ -65,7 +55,36 @@ body {
     color: limegreen;
   }
   
-  /* Footer Styling */
+  /* Ensure Content Starts Below Navbar */
+  .wrapper {
+    margin-top: 120px; /* Ensure space below navbar */
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Page Content */
+  .page-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 80%;
+  }
+  
+  .page-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 1); /* Better visibility */
+  }
+  
+  .page-content p {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  }
+  
+  /* Footer */
   .footer {
     position: fixed;
     bottom: 0;
@@ -85,9 +104,85 @@ body {
     margin: 0 15px;
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
   }
   
   .footer-links a:hover {
-    text-decoration: underline;
+    color: #00aaff; /* Electric blue */
   }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    max-width: 90%;
+    margin: auto;
+    gap: 50px; /* Space between image and text */
+  }
+  
+  .profile-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Aligns image to the left */
+  }
+  
+  .profile-picture {
+    width: 250px; /* Slightly smaller but still prominent */
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+  }
+  
+  .about-text {
+    flex: 2;
+    font-size: 26px; /* Doubled size for readability */
+    line-height: 1.5;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  }
+  
+  .about-text-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 80%;
+    color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8); /* Optional: Adds a soft shadow for depth */
+  }
+  
+  .about-text-container h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: none; /* Removing previous shadow since we now have a dark background */
+  }
+  
+  .about-text-container p {
+    font-size: 20px;
+    line-height: 1.6;
+    text-shadow: none;
+  }
+  
+  /* General Text Container for Readability */
+.text-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Black with 70% transparency */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 80%;
+    color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8); /* Soft shadow for better readability */
+  }
+  
+  .text-container h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: none; /* Removes text shadow */
+  }
+  
+  .text-container p {
+    font-size: 20px;
+    line-height: 1.6;
+    text-shadow: none;
+  }
+  
