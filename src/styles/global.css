@@ -2,8 +2,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Changed from center to prevent cutoff */
-    overflow-y: auto; /* Enables scrolling */
+    justify-content: flex-start; /* Prevents content from being stuck */
+    overflow-y: auto; /* Ensures scrolling works */
     background-color: black;
     background-image: url('/IMG_1472.jpg');
     background-size: contain;
@@ -12,10 +12,10 @@ body {
     background-repeat: no-repeat;
     color: white;
     margin: 0;
-    padding-top: 120px; /* Keeps space below navbar */
     font-family: Arial, sans-serif;
-    height: 100vh; /* Ensures full height */
-}
+    height: 100vh; /* Full height of viewport */
+  }
+
 
 .page {
     width: 100%;
@@ -25,21 +25,23 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-}
+  }
 
  /* Ensure only the Projects page is scrollable */
  .scrollable {
     overflow-y: auto; /* Enables vertical scrolling */
-    height: 100vh; /* Makes the div take the full height of the viewport */
-    padding-bottom: 50px; /* Prevents overlap with footer */
-  }
+    min-height: 100vh; /* Ensures full height */
+    padding-top: 100px; /* Keeps content under navbar */
+    padding-bottom: 200px; /* Keeps content above footer */
+}
+
 
   /* Override for the Projects page */
 .page.scrollable {
     overflow-y: auto !important; /* Ensures scroll works */
     height: auto !important; /* Allows content to expand */
     min-height: 100vh;
-}
+  }
   
   /* Navbar */
   .navbar {
@@ -47,13 +49,14 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px; /* Adjusted for better spacing */
-    background-color: rgba(0, 0, 0, 0.7); /* Transparent dark effect */
+    height: 80px; /* Navbar height */
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 1000; /* Ensures it's always on top */
   }
+
   
   .nav-links {
     list-style: none;
@@ -92,11 +95,13 @@ body {
     max-width: 80%;
     margin: auto;
     padding: 20px;
-    padding-bottom: 200px; /* Extra padding to prevent cutoff by footer */
+    padding-top: 100px; /* Pushes content below navbar */
+    padding-bottom: 200px; /* Prevents content from going under footer */
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     text-align: center;
 }
+
   
   .page-content h1 {
     font-size: 36px;
@@ -112,16 +117,19 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
   }
   
-  /* Footer */
-  .footer {
-    position: relative; /* Prevents overlapping */
+ /* Ensure footer stays fixed at the bottom */
+ .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
     color: white;
     text-align: center;
     padding: 15px 0;
-    margin-top: 50px; /* Adds space between content and footer */
+    z-index: 1000; /* Ensures footer is always visible */
 }
+
   
   .footer-links {
     margin-top: 10px;
