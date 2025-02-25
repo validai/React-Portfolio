@@ -1,16 +1,44 @@
 import React from "react";
+
 const Projects = () => (
-  <div className="page">
-    <h1>Recent Works and Contributions</h1>
-    <p>Here’s a collection of my latest work:</p>
-    <ul>
-      <li><strong>Flare48</strong> - A custom news aggregator focusing on the latest 48-hour news updates.</li>
-      <li><strong>SkillStarter</strong> - A web platform allowing users to create profiles and showcase portfolio projects. Features include secure authentication, Cloudinary image uploads, and a responsive design optimized for all devices.</li>
-      <li><strong>Task Manager App</strong> - A productivity tool to track and organize tasks effectively.</li>
-      <li><strong>Weather Dashboard</strong> - A real-time weather app utilizing OpenWeather API to display forecasts and temperature updates.</li>
-      <li><strong>Note Keeper</strong> - A simple note-taking app that allows users to store, edit, and delete notes efficiently.</li>
-      <li><strong>Expense Tracker</strong> - A financial tracking app designed to help users manage income, expenses, and savings.</li>
-    </ul>
+  <div className="page scrollable">
+    <div className="page-content">
+      <h1>My Projects</h1>
+      <p>Explore some of the innovative projects I've built and contributed to:</p>
+      <div className="projects-grid">
+        <div className="project-item left">
+          <h2>Flare48</h2>
+          <p>A custom news aggregator focusing on the latest 48-hour news updates.</p>
+          <div className="project-image">[Image Placeholder]</div>
+        </div>
+        <div className="project-item right">
+          <h2>SkillStarter</h2>
+          <p>A comprehensive portfolio platform for developers.</p>
+          <div className="project-image">[Image Placeholder]</div>
+        </div>
+        <div className="project-item left">
+          <h2>Task Manager App</h2>
+          <p>A productivity tool to track and organize tasks effectively.</p>
+          <div className="project-image">[Image Placeholder]</div>
+        </div>
+        <div className="project-item right">
+          <h2>E-Commerce Platform</h2>
+          <p>A full-stack shopping experience with secure payments.</p>
+          <div className="project-image">[Image Placeholder]</div>
+        </div>
+        <div className="project-item left">
+          <h2>Weather Dashboard</h2>
+          <p>A real-time weather update application.</p>
+          <div className="project-image">[Image Placeholder]</div>
+        </div>
+        <div className="project-item right">
+          <h2>Chat App</h2>
+          <p>A messaging application with authentication and live updates.</p>
+          <div className="project-image">[Image Placeholder]</div>
+        </div>
+      </div>
+    </div>
   </div>
 );
+
 export default Projects;
