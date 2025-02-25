@@ -1,106 +1,93 @@
-.header {
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    position: relative;
-    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: black;
+    background-image: url('/IMG_1472.jpg');
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     color: white;
+    margin: 0;
+    padding-top: 80px; /* Adjust this value based on navbar height */
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }  
+  
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content {
+    flex: 1;
+    text-align: center;
   }
   
   /* Navbar Styling */
   .navbar {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 15px;
-      text-align: center;
-      border-radius: 10px;
-      width: 80%;
-    }
-    
-    .nav-links {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-    }
-    
-    .nav-links li {
-      display: inline;
-    }
-    
-    .nav-links a {
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    
-    .nav-links a:hover {
-      color: limegreen;
-    }
-    
-    /* General Page Styling */
-  .page {
-      max-width: 800px;
-      margin: 50px auto;
-      text-align: center;
-    }
-    
-    .page h1 {
-      font-size: 2rem;
-      color: #333;
-    }
-    
-    .page p {
-      font-size: 1.2rem;
-      color: #555;
-    }
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: limegreen;
+  }
   
   /* Footer Styling */
-  .wrapper {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    
-    .content {
-      flex: 1;
-      text-align: center;
-      padding-bottom: 60px; /* Space for fixed footer */
-    }
-    
-    .footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 15px 0;
-      width: 100%;
-      position: relative;
-      margin-top: auto;
-    }
-    
-    .footer-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .footer-links {
-      margin-top: 10px;
-    }
-    
-    .footer-links a {
-      margin: 0 15px;
-      color: white;
-      text-decoration: none;
-      font-size: 16px;
-    }
-    
-    .footer-links a:hover {
-      text-decoration: underline;
-    }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+  }
   
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
