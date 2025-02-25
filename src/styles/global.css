@@ -83,6 +83,7 @@ body {
     max-width: 80%;
     margin: auto; /* This centers it horizontally */
     padding: 20px;
+    padding-bottom: 150px; /* Adjusted for footer */
     background-color: rgba(0, 0, 0, 0.6); /* Dark transparent background for readability */
     border-radius: 10px;
     text-align: center;
@@ -255,4 +256,17 @@ body {
     border-radius: 10px;
     text-align: center;
     color: white;
+}
+
+/* Make sure the container inside can actually scroll */
+.projects-page .page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-y: auto; /* Enables scrolling */
+    padding: 20px;
 }

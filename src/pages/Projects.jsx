@@ -3,8 +3,7 @@ import React from "react";
 const Projects = () => (
     <div className="page scrollable">
     <div className="page-content projects-container">
-      <h1>My Projects</h1>
-      <p>Explore some of the innovative projects I've built and contributed to:</p>
+      <h1>Recent Contributions</h1>
       <div className="projects-grid">
         <div className="project-item left">
           <h2>Flare48</h2>
