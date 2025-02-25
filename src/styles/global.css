@@ -243,7 +243,9 @@ body {
 }
 
 .projects-grid {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 80%;
@@ -251,10 +253,12 @@ body {
 }
 
 .project-item {
+    width: 45%;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
     color: white;
 }
 
@@ -269,4 +273,9 @@ body {
     margin: 0 auto;
     overflow-y: auto; /* Enables scrolling */
     padding: 20px;
+}
+
+/* Add extra margin to the last row of projects to push them away from the footer */
+.project-item:last-child {
+    margin-bottom: 100px; /* Creates more space before the footer */
 }
