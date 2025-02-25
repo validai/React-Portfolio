@@ -1,8 +1,8 @@
 import React from "react";
 
 const Projects = () => (
-  <div className="page scrollable">
-    <div className="page-content">
+    <div className="page scrollable">
+    <div className="page-content projects-container">
       <h1>My Projects</h1>
       <p>Explore some of the innovative projects I've built and contributed to:</p>
       <div className="projects-grid">
@@ -38,7 +38,7 @@ const Projects = () => (
         </div>
       </div>
     </div>
-  </div>
+  </div>  
 );
 
 export default Projects;
