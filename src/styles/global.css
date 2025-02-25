@@ -242,13 +242,14 @@ body {
     margin-bottom: 20px; /* Reduce space below Recent Contributions */
 }
 
+/* Ensures enough space before the footer */
 .projects-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 50px; /* Adjust spacing */
-    padding-bottom: 150px; /* Adjust spacing */
+    padding-top: 20px; /* Reduce space from navbar */
+    padding-bottom: 200px; /* More space before footer */
 }
 
 .projects-grid {
@@ -271,20 +272,16 @@ body {
     color: white;
 }
 
-/* Make sure the container inside can actually scroll */
+/* Allows scrolling for project content */
 .projects-page .page-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    overflow-y: auto; /* Enables scrolling */
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    overflow-y: auto; /* Enables scrolling */
     padding: 20px;
 }
 
-/* Add extra margin to the last row of projects to push them away from the footer */
+/* Fixes the last project from getting cut off by the footer */
 .project-item:last-child {
-    margin-bottom: 100px; /* Creates more space before the footer */
+    margin-bottom: 150px;
 }
