@@ -32,7 +32,7 @@ body {
     overflow-y: auto; /* Enables vertical scrolling */
     min-height: 100vh; /* Ensures full height */
     padding-top: 100px; /* Keeps content under navbar */
-    padding-bottom: 200px; /* Keeps content above footer */
+    padding-bottom: 120px; /* Keeps content above footer */
 }
 
 
@@ -93,7 +93,7 @@ body {
   /* Page Content */
   .page-content {
     max-width: 80%;
-    margin: auto;
+    margin-top: 20px; /* Space between navbar and content */
     padding: 20px;
     padding-top: 100px; /* Pushes content below navbar */
     padding-bottom: 200px; /* Prevents content from going under footer */
@@ -151,11 +151,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: left;
+    gap: 50px;
     max-width: 90%;
     margin: auto;
-    gap: 50px; /* Space between image and text */
-    flex-wrap: wrap; /* Ensures responsiveness */
+    text-align: left;
 }
 
 .profile-container {
@@ -164,8 +163,8 @@ body {
     justify-content: flex-start; /* Aligns image to the left */
 }
 
-.profile-picture {
-    width: 250px; /* Slightly smaller but still prominent */
+.profile-pic {
+    width: 220px; /* Adjusted size */
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
 }
@@ -268,6 +267,10 @@ body {
     justify-content: center;
     padding-top: 20px; /* Reduce space from navbar */
     padding-bottom: 200px; /* More space before footer */
+    margin-top: 40px;
+}
+.resume-container {
+    margin-top: 40px;
 }
 
 .projects-grid {
