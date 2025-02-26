@@ -10,10 +10,13 @@ const About = () => (
         </div>
         <div className="about-text">
           <h1>The Developer Behind the Code</h1>
-          <p><strong>Hello! I'm Eric Cordoba</strong>, a passionate and driven software developer who thrives on solving complex problems with elegant, scalable solutions.</p>
-          <p>With a background in full-stack web development, I specialize in <strong>React, Node.js, MongoDB, and Express</strong> to build dynamic, responsive applications that deliver seamless user experiences.</p>
-          <p>Beyond coding, I love staying on top of the latest tech trends, continuously learning new technologies, and collaborating with like-minded individuals to create impactful projects.</p>
-          <p>Whether it's a startup idea, a business tool, or a side project, I'm always eager to take on challenges and bring ideas to life through code.</p>
+          <p><strong>Imagine </strong>being able to connect with the perfect web developer—one who understands your vision, listens to your ideas, and brings them to life with precision and creativity.</p>
+        <p><strong>I am Eric, a Junior Web Developer</strong> passionate about building <strong>innovative digital experiences</strong> that blend functionality with aesthetics. I leverage cutting-edge technologies to craft efficient, user-friendly solutions that solve real-world challenges.</p>
+        <p>With a strong focus on <strong>modern development practices</strong>, I continuously refine my skills to stay ahead in the ever-evolving tech landscape. My goal is to design and develop digital solutions that leave a lasting impact.</p>
+        <p><strong>Because every day, we have a chance to make a difference</strong>—it just takes that first step to change the future..</p>
+        <button className="project-btn" onClick={() => navigate("/projects")}>
+          Discover My Portfolio
+        </button>
         </div>
       </div>
     </div>
