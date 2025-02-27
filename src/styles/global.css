@@ -432,12 +432,12 @@ h1::after {
 
 /* GitHub Button (Red Theme) */
 .github {
-  color: #ff4444; /* Red text */
+  color: limegreen; /* Red text */
 }
 
 .github:hover {
-  box-shadow: 0px 0px 8px #ff4444; /* Red glow */
-  border-color: #ff4444;
+  box-shadow: 0px 0px 8px limegreen; /* Red glow */
+  border-color: limegreen;
 }
 
 /* Contact Page Styling */
