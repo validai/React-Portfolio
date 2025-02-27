@@ -1,10 +1,10 @@
-/* Add a selector for the initial CSS block */
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Prevents content from being stuck */
-  overflow-y: auto; /* Ensures scrolling works */
+  justify-content: flex-start; 
+  overflow-y: auto; 
   background-color: black;
   background-image: url('/IMG_1472.jpg');
   background-size: contain;
@@ -14,55 +14,54 @@ body {
   color: white;
   margin: 0;
   font-family: Arial, sans-serif;
-  height: 100vh; /* Full height of viewport */
+  height: 100vh; 
 }
 
 .page {
   width: 100%;
-  min-height: 100vh; /* Prevents cutoff issues */
-  overflow-y: auto; /* Enables scrolling */
+  min-height: 100vh; 
+  overflow-y: auto; 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
 
-/* Ensure only the Portfolio page is scrollable */
+
 .scrollable {
-  overflow-y: auto; /* Enables vertical scrolling */
-  min-height: 100vh; /* Ensures full height */
-  padding-top: 100px; /* Keeps content under navbar */
-  padding-bottom: 120px; /* Keeps content above footer */
+  overflow-y: auto; 
+  min-height: 100vh; 
+  padding-top: 100px; 
+  padding-bottom: 120px; 
 }
 
-/* Override for the Portfolio page */
+
 .page.scrollable {
-  overflow-y: auto !important; /* Ensures scroll works */
-  height: auto !important; /* Allows content to expand */
+  overflow-y: auto !important; 
+  height: auto !important;
   min-height: 100vh;
 }
 
-/* Navbar */
-/* Navbar */
+
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 75px; /* Adjusted height */
+  height: 75px; 
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   align-items: center;
-  padding: 0 40px; /* Keeps everything aligned */
+  padding: 0 40px; 
   z-index: 1000;
 }
 
-/* Navbar Links */
+
 .nav-links {
   list-style: none;
   padding: 0;
   display: flex;
-  gap: 20px; /* Adjusted space between links */
+  gap: 20px; 
   justify-content: center;
   margin: 0;
 }
@@ -71,7 +70,7 @@ body {
   display: inline-block;
 }
 
-/* Navbar Link Styling */
+
 .nav-links a {
   color: #00aaff;
   text-decoration: none;
@@ -85,53 +84,51 @@ body {
   color: limegreen;
 }
 
-/* Name in Navbar */
-/* Improved Name in Navbar */
+
 .navbar-name {
-  font-size: 30px; /* Slightly bigger */
-  font-weight: 900; /* Stronger definition */
-  font-family: 'Poppins', sans-serif; /* More readable font */
+  font-size: 30px; 
+  font-weight: 900; 
+  font-family: 'Poppins', sans-serif;
   color: limegreen;
   text-shadow: 
-      2px 2px 5px black, /* Dark outline */
+      2px 2px 5px black, 
       0px 0px 10px limegreen, 
-      0px 0px 15px limegreen; /* More subtle glow */
+      0px 0px 15px limegreen; 
   animation: glow 1.5s infinite alternate ease-in-out;
-  margin-right: 25px; /* Keeps spacing */
+  margin-right: 25px; 
 }
 
-/* Adjusted Glow Animation */
+
 @keyframes glow {
   0% {
       text-shadow: 
-          2px 2px 5px black, /* Keeps the dark outline */
+          2px 2px 5px black, 
           0px 0px 5px limegreen, 
           0px 0px 10px limegreen;
   }
   100% {
       text-shadow: 
-          2px 2px 5px black, /* Dark outline remains */
-          0px 0px 8px limegreen, 
+          2px 2px 5px black, 
           0px 0px 12px limegreen;
   }
 }
 
 
   
-  /* Ensure Content Starts Below Navbar */
+  
   .wrapper {
-    margin-top: 120px; /* Ensure space below navbar */
+    margin-top: 120px; 
     width: 100%;
     text-align: center;
   }
   
-  /* Page Content */
+  
   .page-content {
     max-width: 80%;
-    margin-top: 20px; /* Space between navbar and content */
+    margin-top: 20px; 
     padding: 20px;
-    padding-top: 100px; /* Pushes content below navbar */
-    padding-bottom: 200px; /* Prevents content from going under footer */
+    padding-top: 100px; 
+    padding-bottom: 200px; 
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     text-align: center;
@@ -141,10 +138,9 @@ body {
   .page-content h1 {
     font-size: 36px;
     font-weight: bold;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 1); /* Better visibility */
-    margin-bottom: 10px; /* Space between title and content */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 1); 
+    margin-bottom: 10px; 
   }
-  
   .page-content p {
     font-size: 20px;
     font-weight: bold;
@@ -152,7 +148,7 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
   }
   
- /* Ensure footer stays fixed at the bottom */
+ 
  .footer {
     position: fixed;
     bottom: 0;
@@ -162,7 +158,7 @@ body {
     color: white;
     text-align: center;
     padding: 15px 0;
-    z-index: 1000; /* Ensures footer is always visible */
+    z-index: 1000; 
 }
 
   
@@ -179,7 +175,7 @@ body {
   }
   
   .footer-links a:hover {
-    color: #00aaff; /* Electric blue */
+    color: #00aaff; 
   }
   
   .about-container {
@@ -189,43 +185,43 @@ body {
     text-align: left;
     max-width: 90%;
     margin: auto;
-    gap: 50px; /* Space between image and text */
+    gap: 50px; 
 }
 
 .profile-container {
     flex: 1;
     display: flex;
-    justify-content: flex-end; /* Aligns image to the left */
+    justify-content: flex-end; 
 }
 
 .profile-picture {
-    width: 220px; /* Adjusted size */
+    width: 220px; 
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
 }
 
 .about-text {
-    flex: 3; /* Give more space to the text */
-    max-width: 70%; /* Previously was too narrow, increasing it */
-    font-size: 22px; /* Keep it readable */
+    flex: 3; 
+    max-width: 70%; 
+    font-size: 22px; 
     line-height: 1.6;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
   .about-text-container {
-    background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+    background-color: rgba(0, 0, 0, 0.7); 
     padding: 20px;
     border-radius: 10px;
     text-align: left;
     max-width: 80%;
     color: white;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8); /* Optional: Adds a soft shadow for depth */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8); 
   }
   
   .about-text-container h1 {
     font-size: 36px;
     font-weight: bold;
-    text-shadow: none; /* Removing previous shadow since we now have a dark background */
+    text-shadow: none; 
   }
   
   .about-text-container p {
@@ -234,21 +230,20 @@ body {
     text-shadow: none;
   }
   
-  /* General Text Container for Readability */
 .text-container {
-    background-color: rgba(0, 0, 0, 0.7); /* Black with 70% transparency */
+    background-color: rgba(0, 0, 0, 0.7); 
     padding: 20px;
     border-radius: 10px;
     text-align: left;
     max-width: 80%;
     color: white;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8); /* Soft shadow for better readability */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8); 
   }
   
   .text-container h1 {
     font-size: 36px;
     font-weight: bold;
-    text-shadow: none; /* Removes text shadow */
+    text-shadow: none; 
   }
   
   .text-container p {
@@ -258,11 +253,11 @@ body {
   }
   
   .portfolio-btn {
-    font-size: 24px; /* Larger font */
+    font-size: 24px; 
     font-weight: bold;
-    padding: 15px 30px; /* Increased padding */
+    padding: 15px 30px; 
     background-color: black;
-    color: #00aaff; /* Electric blue text */
+    color: #00aaff; 
     border: 3px solid white;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
@@ -270,14 +265,14 @@ body {
 }
 
 .portfolio-btn:hover {
-    box-shadow: 0px 0px 15px limegreen; /* Green glow on hover */
+    box-shadow: 0px 0px 15px limegreen; 
     border-color: limegreen;
 }
 
 .portfolio-btn:active {
-    background-color: limegreen; /* Full green when clicked */
+    background-color: limegreen; 
     color: black;
-    transform: scale(0.98); /* Slight press effect */
+    transform: scale(0.98); 
 }
 
 @media (max-width: 768px) {
@@ -289,17 +284,16 @@ body {
 
 
 .portfolio-container h1 {
-    margin-bottom: 20px; /* Reduce space below Recent Contributions */
+    margin-bottom: 20px; 
 }
 
-/* Ensures enough space before the footer */
 .portfolio-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 20px; /* Reduce space from navbar */
-    padding-bottom: 200px; /* More space before footer */
+    padding-top: 20px; 
+    padding-bottom: 200px; 
     margin-top: 40px;
 }
 .resume-container {
@@ -329,16 +323,13 @@ body {
     color: white;
 }
 
-/* Allows scrolling for portfolio content */
 .portfolio-page .page-content {
-    overflow-y: auto; /* Enables scrolling */
+    overflow-y: auto; 
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
-
-/* Fixes the last portfolio from getting cut off by the footer */
 .portfolio-item:last-child {
     margin-bottom: 150px;
 }
@@ -349,62 +340,51 @@ body {
   gap: 10px;
 }
 
-/* Divider Bar Under All H1 Headers */
 h1 {
     position: relative;
     display: inline-block;
-    margin-bottom: 20px; /* Space between text and divider */
+    margin-bottom: 20px; 
 }
 
-/* Divider Styling */
 h1::after {
     content: "";
     display: block;
     width: 100%;
-    height: 5px; /* Adjust thickness */
-    background: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
-    border-radius: 10px; /* Rounded edges for an oblong look */
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7); /* Shadow effect */
-    margin-top: 10px; /* Space between text and divider */
+    height: 5px; 
+    background: rgba(255, 255, 255, 0.3); 
+    border-radius: 10px; 
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7); 
+    margin-top: 10px; 
 }
-
-/* Portfolio Image Container */
 .portfolio-image {
-  width: 150px;  /* Fixed width */
-  height: 150px; /* Fixed height */
+  width: 150px;  
+  height: 150px; 
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Ensures images don’t overflow */
-  border-radius: 10px; /* Optional rounded corners */
-  background-color: rgba(0, 0, 0, 0.6); /* Background color for consistency */
+  overflow: hidden; 
+  border-radius: 10px; 
+  background-color: rgba(0, 0, 0, 0.6); 
 }
-
-/* Ensure all images fit correctly */
 .portfolio-image img {
-  width: 100%;  /* Ensures it fills container */
-  height: 100%; /* Ensures it fills container */
-  object-fit: cover; /* Ensures images crop properly instead of stretching */
-  border-radius: 10px; /* Matches container for smooth appearance */
+  width: 100%;  
+  height: 100%; 
+  object-fit: cover; 
+  border-radius: 10px; 
 }
 
-
-/* Adjust Hover Effect */
 .portfolio-link-btn:hover {
-  box-shadow: 0px 0px 8px #00aaff; /* Reduce glow size */
+  box-shadow: 0px 0px 8px #00aaff; 
   border-color: #00aaff;
 }
 
-/* Portfolio Page Buttons */
 .portfolio-buttons {
   display: flex;
-  flex-direction: column; /* Stack buttons vertically */
-  align-items: flex-end; /* Align to the left */
-  gap: 12px; /* Small gap between the buttons */
+  flex-direction: column; 
+  align-items: flex-end; 
+  gap: 12px; 
   margin-right: 10px;
 }
-
-/* Live Demo Button */
 .portfolio-link-btn {
   display: inline-block;
   font-size: 10px;
@@ -420,27 +400,24 @@ h1::after {
   transition: all 0.3s ease-in-out;
 }
 
-/* Live Demo Button Styles */
+
 .live-demo {
-  color: #00aaff; /* Electric blue text */
+  color: #00aaff; 
 }
 
 .live-demo:hover {
   box-shadow: 0px 0px 8px #00aaff;
   border-color: #00aaff;
 }
-
-/* GitHub Button (Red Theme) */
 .github {
-  color: limegreen; /* Red text */
+  color: limegreen; 
 }
 
 .github:hover {
-  box-shadow: 0px 0px 8px limegreen; /* Red glow */
+  box-shadow: 0px 0px 8px limegreen; 
   border-color: limegreen;
 }
 
-/* Contact Page Styling */
 .contact-container {
   text-align: center;
   max-width: 500px;
@@ -449,13 +426,12 @@ h1::after {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.8);
-  width: 90vw; /* Ensure full responsiveness */
-  max-width: 500px; /* Prevents it from getting too wide */
+  width: 90vw;
+  max-width: 500px; 
 }
 
-/* Prevent horizontal scrolling */
 body, html {
-  overflow-x: hidden; /* Fixes left-right scrolling */
+  overflow-x: hidden; 
   margin: 0;
   padding: 0;
 }
@@ -472,7 +448,7 @@ body, html {
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%; /* Fix width issues */
+  width: 100%; 
   max-width: 450px;
   padding: 12px;
   font-size: 16px;
@@ -489,7 +465,6 @@ body, html {
   height: 120px;
 }
 
-/* Fix width of the input group */
 .input-group {
   width: 100%;
   margin-bottom: 15px;
@@ -514,8 +489,6 @@ body, html {
   box-shadow: 0 0 8px #00aaff;
   outline: none;
 }
-
-/* Fix Error Message Placement */
 .input-error {
   border-color: red !important;
   box-shadow: 0 0 8px red !important;
@@ -527,8 +500,6 @@ body, html {
   margin-top: 5px;
   position: relative;
 }
-
-/* Fix button centering */
 .contact-form button {
   width: 80%;
   max-width: 200px;
@@ -542,7 +513,7 @@ body, html {
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  margin: 0 auto; /* Ensure centering */
+  margin: 0 auto; 
 }
 
 .contact-form button:hover {
@@ -550,8 +521,6 @@ body, html {
   border-color: #00aaff;
 }
 
-
-/* Resume Page Styling */
 .resume-container {
   text-align: center;
   max-width: 600px;
@@ -576,7 +545,6 @@ body, html {
   margin-bottom: 20px;
 }
 
-/* Resume Button */
 .resume-btn {
   display: inline-block;
   font-size: 14px;
@@ -596,7 +564,6 @@ body, html {
   border-color: #00aaff;
 }
 
-/* Technical Proficiencies List */
 .tech-list {
   list-style: none;
   padding: 0;
@@ -612,8 +579,6 @@ body, html {
   padding-left: 15px;
   position: relative;
 }
-
-/* Add a bullet-like effect for better readability */
 .tech-list li::before {
   content: "•";
   color: #00aaff;
