@@ -283,7 +283,7 @@ body {
 @media (max-width: 768px) {
     .page-content {
         max-width: 90%;
-        padding: 15px;
+        padding: 15px;s
     }
 }
 
@@ -360,4 +360,24 @@ h1::after {
     border-radius: 10px; /* Rounded edges for an oblong look */
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7); /* Shadow effect */
     margin-top: 10px; /* Space between text and divider */
+}
+
+/* Portfolio Image Container */
+.portfolio-image {
+  width: 150px;  /* Fixed width */
+  height: 150px; /* Fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures images don’t overflow */
+  border-radius: 10px; /* Optional rounded corners */
+  background-color: rgba(0, 0, 0, 0.6); /* Background color for consistency */
+}
+
+/* Ensure all images fit correctly */
+.portfolio-image img {
+  width: 100%;  /* Ensures it fills container */
+  height: 100%; /* Ensures it fills container */
+  object-fit: cover; /* Ensures images crop properly instead of stretching */
+  border-radius: 10px; /* Matches container for smooth appearance */
 }

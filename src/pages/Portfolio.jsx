@@ -12,7 +12,7 @@ const Portfolio = () => {
             <h2>Flare48</h2>
             <p>A custom news aggregator focusing on the latest 48-hour news updates.</p>
             <div className="portfolio-image">
-              <img src="../assets/flare48.png" alt="Flare48 Project" />
+              <img src="/flare48.jpg" alt="Flare48 Project" />
             </div>
           </div>
 
@@ -21,7 +21,7 @@ const Portfolio = () => {
             <h2>Skill Starter</h2>
             <p>A comprehensive portfolio platform for developers.</p>
             <div className="portfolio-image">
-              <img src="../assets/skillstarter.jpg" alt="Skill Starter Project" />
+              <img src="/skillstarter.jpg" alt="Skill Starter Project" />
             </div>
           </div>
 
@@ -30,7 +30,7 @@ const Portfolio = () => {
             <h2>Audio Spot</h2>
             <p>A blog for music lovers who want to share new music and experiences.</p>
             <div className="portfolio-image">
-              <img src="../assets/audiospotlogo.webp" alt="Audio Spot Project" />
+              <img src="/audiospotlogo.jpeg" alt="Audio Spot Project" />
             </div>
           </div>
 
@@ -39,7 +39,7 @@ const Portfolio = () => {
             <h2>Delivery Tracker</h2>
             <p>A full-stack delivery tracking application.</p>
             <div className="portfolio-image">
-              <img src="../assets/Delivery Tracker.webp" alt="Delivery Tracker Project" />
+              <img src="/Delivery-Tracker.jpeg" alt="Delivery Tracker Project" />
             </div>
           </div>
 
@@ -48,7 +48,7 @@ const Portfolio = () => {
             <h2>Weather Checker</h2>
             <p>A real-time weather update application.</p>
             <div className="portfolio-image">
-              <img src="../assets/weather checker.webp" alt="Weather Checker Project" />
+              <img src="/weather-checker.jpeg" alt="Weather Checker Project" />
             </div>
           </div>
 
@@ -57,7 +57,7 @@ const Portfolio = () => {
             <h2>Valid AI</h2>
             <p>An art-based AI application.</p>
             <div className="portfolio-image">
-              <img src="../assets/VALID.png" alt="Valid AI Project" />
+              <img src="/VALID.jpg" alt="Valid AI Project" />
             </div>
           </div>
 
