@@ -398,8 +398,9 @@ h1::after {
 /* Portfolio Page Buttons */
 .portfolio-buttons {
   display: flex;
-  gap: 10px; /* Spacing between buttons */
-  margin-top: 10px; /* Adjust spacing */
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: flex-start; /* Align to the left */
+  gap: 8px; /* Small gap between the buttons */
 }
 
 /* Live Demo Button */
@@ -407,6 +408,7 @@ h1::after {
   display: inline-block;
   font-size: 10px;
   font-weight: bold;
+  width: 100px;
   padding: 4px 8px;
   background-color: black;
   border: 1px solid white;

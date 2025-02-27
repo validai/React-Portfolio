@@ -13,8 +13,10 @@ const Portfolio = () => {
             <p>A custom news aggregator focusing on the latest 48-hour news updates.</p>
             <div className="portfolio-content">
               <img className="portfolio-image" src="/flare48.jpg" alt="Flare48 Project" />
-              <a className="portfolio-link-btn" href="#" target="_blank">Live Demo</a>
-              <a className="portfolio-link-btn github" href="#" target="_blank">GitHub</a>
+              <div className="portfolio-buttons">
+                <a className="portfolio-link-btn live-demo" href="#" target="_blank">Live Demo</a>
+                <a className="portfolio-link-btn github" href="#" target="_blank">GitHub</a>
+              </div>
             </div>
           </div>
 
@@ -24,8 +26,10 @@ const Portfolio = () => {
             <p>A comprehensive portfolio platform for developers.</p>
             <div className="portfolio-content">
               <img className="portfolio-image" src="/skillstarter.jpg" alt="Skill Starter Project" />
-              <a className="portfolio-link-btn" href="#" target="_blank">Live Demo</a>
-              <a className="portfolio-link-btn github" href="#" target="_blank">GitHub</a>
+              <div className="portfolio-buttons">
+                <a className="portfolio-link-btn live-demo" href="#" target="_blank">Live Demo</a>
+                <a className="portfolio-link-btn github" href="#" target="_blank">GitHub</a>
+              </div>
             </div>
           </div>
 
@@ -35,8 +39,10 @@ const Portfolio = () => {
             <p>A blog for music lovers who want to share new music and experiences.</p>
             <div className="portfolio-content">
               <img className="portfolio-image" src="/audiospotlogo.jpeg" alt="Audio Spot Project" />
-              <a className="portfolio-link-btn" href="#" target="_blank">Live Demo</a>
-              <a className="portfolio-link-btn github" href="#" target="_blank">GitHub</a>
+              <div className="portfolio-buttons">
+                <a className="portfolio-link-btn live-demo" href="#" target="_blank">Live Demo</a>
+                <a className="portfolio-link-btn github" href="#" target="_blank">GitHub</a>
+              </div>
             </div>
           </div>
 
@@ -46,8 +52,10 @@ const Portfolio = () => {
             <p>A full-stack delivery tracking application.</p>
             <div className="portfolio-content">
               <img className="portfolio-image" src="/delivery-tracker.jpeg" alt="Delivery Tracker Project" />
-              <a className="portfolio-link-btn" href="#" target="_blank">Live Demo</a>
-              <a className="portfolio-link-btn github" href="#" target="_blank">GitHub</a>
+              <div className="portfolio-buttons">
+                <a className="portfolio-link-btn live-demo" href="#" target="_blank">Live Demo</a>
+                <a className="portfolio-link-btn github" href="#" target="_blank">GitHub</a>
+              </div>
             </div>
           </div>
 
@@ -57,8 +65,10 @@ const Portfolio = () => {
             <p>A real-time weather update application.</p>
             <div className="portfolio-content">
               <img className="portfolio-image" src="/weather-checker.jpeg" alt="Weather Checker Project" />
-              <a className="portfolio-link-btn" href="#" target="_blank">Live Demo</a>
-              <a className="portfolio-link-btn github" href="#" target="_blank">GitHub</a>
+              <div className="portfolio-buttons">
+                <a className="portfolio-link-btn live-demo" href="#" target="_blank">Live Demo</a>
+                <a className="portfolio-link-btn github" href="#" target="_blank">GitHub</a>
+              </div>
             </div>
           </div>
 
@@ -68,8 +78,10 @@ const Portfolio = () => {
             <p>An art-based AI application.</p>
             <div className="portfolio-content">
               <img className="portfolio-image" src="/VALID.jpg" alt="Valid AI Project" />
-              <a className="portfolio-link-btn" href="#" target="_blank">Live Demo</a>
-              <a className="portfolio-link-btn github" href="#" target="_blank">GitHub</a>
+              <div className="portfolio-buttons">
+                <a className="portfolio-link-btn live-demo" href="#" target="_blank">Live Demo</a>
+                <a className="portfolio-link-btn github" href="#" target="_blank">GitHub</a>
+              </div>
             </div>
           </div>
 
