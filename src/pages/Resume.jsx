@@ -20,7 +20,7 @@ const Resume = () => (
         <li>APIs: RESTful APIs, Fetch/Axios, Third-party API Integration</li>
         <li>Authentication: JWT, OAuth, Google Auth</li>
         <li>Version Control: Git, GitHub, GitHub Actions</li>
-        <li>Deployment: Render, Netify</li>
+        <li>Deployment: Render, Netlify</li>
         <li>Dev Tools: Postman, DBeaver, VS Code</li>
         <li>Project Management: Agile, Scrum, Trello, Jira</li>
       </ul>
