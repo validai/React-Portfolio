@@ -275,12 +275,46 @@ body {
     transform: scale(0.98); 
 }
 
+/* Responsive Navbar */
 @media (max-width: 768px) {
-    .page-content {
-        max-width: 90%;
-        padding: 15px;
-    }
+  .navbar {
+    display: flex;
+    flex-direction: column; /* Stack items */
+    align-items: center;
+    width: 100%; /* Ensure full width */
+    padding: 10px 0;
+  }
+
+  .navbar a {
+    display: block;
+    text-align: center;
+    font-size: 14px; /* Slightly smaller text */
+    margin: 5px 0;
+    width: 100%; /* Ensure links don't break */
+  }
+
+  .logo {
+    font-size: 20px; /* Reduce logo size */
+    text-align: center; /* Ensure it's centered */
+    width: 100%;
+  }
 }
+
+/* Fix overflow issue */
+@media (max-width: 480px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center; /* Center items */
+  }
+
+  .navbar a {
+    font-size: 12px; /* Reduce text size */
+    padding: 5px;
+    width: 100%;
+  }
+}
+
+
 
 
 .portfolio-container h1 {
