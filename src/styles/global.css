@@ -389,25 +389,50 @@ h1::after {
 }
 
 
-/* Portfolio Page Button */
-.portfolio-link-btn {
-  display: inline-block;
-  font-size: 10px; /* Reduce font size */
-  font-weight: bold;
-  padding: 4px 8px; /* Reduce padding */
-  background-color: black;
-  color: #00aaff;
-  border: 1px solid white; /* Reduce border thickness */
-  border-radius: 10px; /* Smaller border radius */
-  transition: all 0.3s ease-in-out;
-  text-decoration: none;
-  text-align: center;
-  margin-left: 10px; /* Adjust margin */
-  white-space: nowrap;
-}
-
 /* Adjust Hover Effect */
 .portfolio-link-btn:hover {
   box-shadow: 0px 0px 8px #00aaff; /* Reduce glow size */
   border-color: #00aaff;
+}
+
+/* Portfolio Page Buttons */
+.portfolio-buttons {
+  display: flex;
+  gap: 10px; /* Spacing between buttons */
+  margin-top: 10px; /* Adjust spacing */
+}
+
+/* Live Demo Button */
+.portfolio-link-btn {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 4px 8px;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Live Demo Button Styles */
+.live-demo {
+  color: #00aaff; /* Electric blue text */
+}
+
+.live-demo:hover {
+  box-shadow: 0px 0px 8px #00aaff;
+  border-color: #00aaff;
+}
+
+/* GitHub Button (Red Theme) */
+.github {
+  color: #ff4444; /* Red text */
+}
+
+.github:hover {
+  box-shadow: 0px 0px 8px #ff4444; /* Red glow */
+  border-color: #ff4444;
 }

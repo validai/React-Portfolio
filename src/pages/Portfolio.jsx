@@ -14,6 +14,7 @@ const Portfolio = () => {
             <div className="portfolio-content">
               <img className="portfolio-image" src="/flare48.jpg" alt="Flare48 Project" />
               <a className="portfolio-link-btn" href="#" target="_blank">Live Demo</a>
+              <a className="portfolio-link-btn github" href="#" target="_blank">GitHub</a>
             </div>
           </div>
 
@@ -24,6 +25,7 @@ const Portfolio = () => {
             <div className="portfolio-content">
               <img className="portfolio-image" src="/skillstarter.jpg" alt="Skill Starter Project" />
               <a className="portfolio-link-btn" href="#" target="_blank">Live Demo</a>
+              <a className="portfolio-link-btn github" href="#" target="_blank">GitHub</a>
             </div>
           </div>
 
@@ -34,6 +36,7 @@ const Portfolio = () => {
             <div className="portfolio-content">
               <img className="portfolio-image" src="/audiospotlogo.jpeg" alt="Audio Spot Project" />
               <a className="portfolio-link-btn" href="#" target="_blank">Live Demo</a>
+              <a className="portfolio-link-btn github" href="#" target="_blank">GitHub</a>
             </div>
           </div>
 
@@ -44,6 +47,7 @@ const Portfolio = () => {
             <div className="portfolio-content">
               <img className="portfolio-image" src="/delivery-tracker.jpeg" alt="Delivery Tracker Project" />
               <a className="portfolio-link-btn" href="#" target="_blank">Live Demo</a>
+              <a className="portfolio-link-btn github" href="#" target="_blank">GitHub</a>
             </div>
           </div>
 
@@ -54,6 +58,7 @@ const Portfolio = () => {
             <div className="portfolio-content">
               <img className="portfolio-image" src="/weather-checker.jpeg" alt="Weather Checker Project" />
               <a className="portfolio-link-btn" href="#" target="_blank">Live Demo</a>
+              <a className="portfolio-link-btn github" href="#" target="_blank">GitHub</a>
             </div>
           </div>
 
@@ -64,6 +69,7 @@ const Portfolio = () => {
             <div className="portfolio-content">
               <img className="portfolio-image" src="/VALID.jpg" alt="Valid AI Project" />
               <a className="portfolio-link-btn" href="#" target="_blank">Live Demo</a>
+              <a className="portfolio-link-btn github" href="#" target="_blank">GitHub</a>
             </div>
           </div>
 
