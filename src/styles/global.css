@@ -275,46 +275,57 @@ body {
     transform: scale(0.98); 
 }
 
-/* Responsive Navbar */
 @media (max-width: 768px) {
+  .page {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px; 
+    text-align: center;
+  }
+
+  .page-content {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
   .navbar {
     display: flex;
-    flex-direction: column; /* Stack items */
+    flex-direction: column;
     align-items: center;
-    width: 100%; /* Ensure full width */
+    justify-content: center;
+    width: 100%;
     padding: 10px 0;
   }
 
   .navbar a {
     display: block;
     text-align: center;
-    font-size: 14px; /* Slightly smaller text */
+    font-size: 14px;
     margin: 5px 0;
-    width: 100%; /* Ensure links don't break */
+    width: 100%;
   }
 
   .logo {
-    font-size: 20px; /* Reduce logo size */
-    text-align: center; /* Ensure it's centered */
+    font-size: 20px;
+    text-align: center;
     width: 100%;
   }
 }
 
-/* Fix overflow issue */
 @media (max-width: 480px) {
   .navbar {
     flex-wrap: wrap;
-    justify-content: center; /* Center items */
+    justify-content: center;
   }
 
   .navbar a {
-    font-size: 12px; /* Reduce text size */
+    font-size: 12px;
     padding: 5px;
     width: 100%;
   }
 }
-
-
 
 
 .portfolio-container h1 {
