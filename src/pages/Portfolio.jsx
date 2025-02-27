@@ -13,7 +13,7 @@ const Portfolio = () => {
             <p>A custom news aggregator focusing on the latest 48-hour news updates.</p>
             <div className="portfolio-content">
               <img className="portfolio-image" src="/flare48.jpg" alt="Flare48 Project" />
-              <a className="portfolio-btn" href="#" target="_blank">Live Demo</a>
+              <a className="portfolio-link-btn" href="#" target="_blank">Live Demo</a>
             </div>
           </div>
 
@@ -23,7 +23,7 @@ const Portfolio = () => {
             <p>A comprehensive portfolio platform for developers.</p>
             <div className="portfolio-content">
               <img className="portfolio-image" src="/skillstarter.jpg" alt="Skill Starter Project" />
-              <a className="portfolio-btn" href="#" target="_blank">Live Demo</a>
+              <a className="portfolio-link-btn" href="#" target="_blank">Live Demo</a>
             </div>
           </div>
 
@@ -33,7 +33,7 @@ const Portfolio = () => {
             <p>A blog for music lovers who want to share new music and experiences.</p>
             <div className="portfolio-content">
               <img className="portfolio-image" src="/audiospotlogo.jpg" alt="Audio Spot Project" />
-              <a className="portfolio-btn" href="#" target="_blank">Live Demo</a>
+              <a className="portfolio-link-btn" href="#" target="_blank">Live Demo</a>
             </div>
           </div>
 
@@ -42,8 +42,8 @@ const Portfolio = () => {
             <h2>Delivery Tracker</h2>
             <p>A full-stack delivery tracking application.</p>
             <div className="portfolio-content">
-              <img className="portfolio-image" src="/Delivery-Tracker.jpg" alt="Delivery Tracker Project" />
-              <a className="portfolio-btn" href="#" target="_blank">Live Demo</a>
+              <img className="portfolio-image" src="/delivery-tracker.jpg" alt="Delivery Tracker Project" />
+              <a className="portfolio-link-btn" href="#" target="_blank">Live Demo</a>
             </div>
           </div>
 
@@ -53,7 +53,7 @@ const Portfolio = () => {
             <p>A real-time weather update application.</p>
             <div className="portfolio-content">
               <img className="portfolio-image" src="/weather-checker.jpg" alt="Weather Checker Project" />
-              <a className="portfolio-btn" href="#" target="_blank">Live Demo</a>
+              <a className="portfolio-link-btn" href="#" target="_blank">Live Demo</a>
             </div>
           </div>
 
@@ -63,7 +63,7 @@ const Portfolio = () => {
             <p>An art-based AI application.</p>
             <div className="portfolio-content">
               <img className="portfolio-image" src="/VALID.jpg" alt="Valid AI Project" />
-              <a className="portfolio-btn" href="#" target="_blank">Live Demo</a>
+              <a className="portfolio-link-btn" href="#" target="_blank">Live Demo</a>
             </div>
           </div>
 

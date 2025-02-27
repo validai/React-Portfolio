@@ -391,22 +391,22 @@ h1::after {
 /* Portfolio Page Button */
 .portfolio-link-btn {
   display: inline-block;
-  font-size: 14px; /* Smaller button */
+  font-size: 10px; /* Reduce font size */
   font-weight: bold;
-  padding: 8px 12px;
+  padding: 4px 8px; /* Reduce padding */
   background-color: black;
-  color: #00aaff; /* Electric blue text */
-  border: 2px solid white;
-  border-radius: 6px;
+  color: #00aaff;
+  border: 1px solid white; /* Reduce border thickness */
+  border-radius: 4px; /* Smaller border radius */
   transition: all 0.3s ease-in-out;
   text-decoration: none;
   text-align: center;
-  margin-left: 15px; /* Space between image and button */
-  white-space: nowrap; /* Prevents text wrapping */
+  margin-left: 10px; /* Adjust margin */
+  white-space: nowrap;
 }
 
-/* Button Glow Effect */
+/* Adjust Hover Effect */
 .portfolio-link-btn:hover {
-  box-shadow: 0px 0px 10px #00aaff; /* Blue glow */
+  box-shadow: 0px 0px 8px #00aaff; /* Reduce glow size */
   border-color: #00aaff;
 }
