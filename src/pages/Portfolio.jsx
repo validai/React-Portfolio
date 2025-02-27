@@ -32,7 +32,7 @@ const Portfolio = () => {
             <h2>Audio Spot</h2>
             <p>A blog for music lovers who want to share new music and experiences.</p>
             <div className="portfolio-content">
-              <img className="portfolio-image" src="/audiospotlogo.jpg" alt="Audio Spot Project" />
+              <img className="portfolio-image" src="/audiospotlogo.jpeg" alt="Audio Spot Project" />
               <a className="portfolio-link-btn" href="#" target="_blank">Live Demo</a>
             </div>
           </div>
@@ -42,7 +42,7 @@ const Portfolio = () => {
             <h2>Delivery Tracker</h2>
             <p>A full-stack delivery tracking application.</p>
             <div className="portfolio-content">
-              <img className="portfolio-image" src="/delivery-tracker.jpg" alt="Delivery Tracker Project" />
+              <img className="portfolio-image" src="/delivery-tracker.jpeg" alt="Delivery Tracker Project" />
               <a className="portfolio-link-btn" href="#" target="_blank">Live Demo</a>
             </div>
           </div>
@@ -52,7 +52,7 @@ const Portfolio = () => {
             <h2>Weather Checker</h2>
             <p>A real-time weather update application.</p>
             <div className="portfolio-content">
-              <img className="portfolio-image" src="/weather-checker.jpg" alt="Weather Checker Project" />
+              <img className="portfolio-image" src="/weather-checker.jpeg" alt="Weather Checker Project" />
               <a className="portfolio-link-btn" href="#" target="_blank">Live Demo</a>
             </div>
           </div>
