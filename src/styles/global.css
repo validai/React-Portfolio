@@ -399,8 +399,9 @@ h1::after {
 .portfolio-buttons {
   display: flex;
   flex-direction: column; /* Stack buttons vertically */
-  align-items: flex-start; /* Align to the left */
-  gap: 8px; /* Small gap between the buttons */
+  align-items: flex-end; /* Align to the left */
+  gap: 12px; /* Small gap between the buttons */
+  margin-right: 10px;
 }
 
 /* Live Demo Button */
@@ -409,7 +410,7 @@ h1::after {
   font-size: 10px;
   font-weight: bold;
   width: 100px;
-  padding: 4px 8px;
+  padding: 6px 10px;
   background-color: black;
   border: 1px solid white;
   border-radius: 10px;
