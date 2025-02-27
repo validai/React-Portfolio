@@ -441,6 +441,7 @@ h1::after {
 }
 
 /* Contact Page Styling */
+/* Contact Page Styling */
 .contact-container {
   text-align: center;
   max-width: 500px;
@@ -469,6 +470,29 @@ h1::after {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%; /* Fix width consistency */
+  max-width: 450px;
+  padding: 12px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 120px;
 }
 
 .input-group {
@@ -496,6 +520,7 @@ h1::after {
   outline: none;
 }
 
+/* ✅ Fix Error Message Placement */
 .input-error {
   border-color: red !important;
   box-shadow: 0 0 8px red !important;
@@ -504,25 +529,27 @@ h1::after {
 .error-message {
   color: red;
   font-size: 12px;
-  position: absolute;
-  bottom: -18px;
-  left: 5px;
+  margin-top: 5px;
+  position: relative;
 }
 
-.contact-btn {
+/* Button Styling */
+.contact-form button {
+  width: 80%;
+  max-width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
   background-color: black;
   color: white;
   border: 2px solid white;
-  padding: 12px 20px;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: bold;
-  border-radius: 6px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.contact-btn:hover {
+.contact-form button:hover {
+  box-shadow: 0px 0px 8px #00aaff;
   border-color: #00aaff;
-  box-shadow: 0 0 8px #00aaff;
 }

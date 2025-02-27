@@ -29,6 +29,11 @@ const Contact = () => {
     setErrors({ ...errors, [e.target.name]: "" });
   };
 
+  const handleBlur = (e) => {
+    // Validate when user leaves a field
+    validateForm();
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
@@ -51,6 +56,7 @@ const Contact = () => {
               placeholder="Your Name"
               value={formData.name}
               onChange={handleChange}
+              onBlur={handleBlur}
               className={errors.name ? "input-error" : ""}
             />
             {errors.name && <span className="error-message">{errors.name}</span>}
@@ -63,6 +69,7 @@ const Contact = () => {
               placeholder="Your Email"
               value={formData.email}
               onChange={handleChange}
+              onBlur={handleBlur}
               className={errors.email ? "input-error" : ""}
             />
             {errors.email && <span className="error-message">{errors.email}</span>}
@@ -74,6 +81,7 @@ const Contact = () => {
               placeholder="Your Message"
               value={formData.message}
               onChange={handleChange}
+              onBlur={handleBlur}
               className={errors.message ? "input-error" : ""}
             ></textarea>
             {errors.message && <span className="error-message">{errors.message}</span>}
