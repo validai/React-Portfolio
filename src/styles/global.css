@@ -441,7 +441,6 @@ h1::after {
 }
 
 /* Contact Page Styling */
-/* Contact Page Styling */
 .contact-container {
   text-align: center;
   max-width: 500px;
@@ -450,27 +449,22 @@ h1::after {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.8);
+  width: 90vw; /* Ensure full responsiveness */
+  max-width: 500px; /* Prevents it from getting too wide */
 }
 
-.contact-container h1 {
-  color: white;
-  font-size: 24px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-}
-
-.contact-container p {
-  color: white;
-  font-size: 14px;
-  margin-bottom: 15px;
+/* Prevent horizontal scrolling */
+body, html {
+  overflow-x: hidden; /* Fixes left-right scrolling */
+  margin: 0;
+  padding: 0;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 100%; 
   max-width: 500px;
   margin: 0 auto;
   padding: 20px;
@@ -478,7 +472,7 @@ h1::after {
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%; /* Fix width consistency */
+  width: 100%; /* Fix width issues */
   max-width: 450px;
   padding: 12px;
   font-size: 16px;
@@ -495,6 +489,7 @@ h1::after {
   height: 120px;
 }
 
+/* Fix width of the input group */
 .input-group {
   width: 100%;
   margin-bottom: 15px;
@@ -520,7 +515,7 @@ h1::after {
   outline: none;
 }
 
-/* ✅ Fix Error Message Placement */
+/* Fix Error Message Placement */
 .input-error {
   border-color: red !important;
   box-shadow: 0 0 8px red !important;
@@ -533,7 +528,7 @@ h1::after {
   position: relative;
 }
 
-/* Button Styling */
+/* Fix button centering */
 .contact-form button {
   width: 80%;
   max-width: 200px;
@@ -547,6 +542,7 @@ h1::after {
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  margin: 0 auto; /* Ensure centering */
 }
 
 .contact-form button:hover {
