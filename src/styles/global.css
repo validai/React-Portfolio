@@ -178,34 +178,38 @@ body {
     color: #00aaff; 
   }
   
-  .about-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    max-width: 90%;
-    margin: auto;
-    gap: 50px; 
+  /* About Page Styling */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
+/* Profile Image */
 .profile-container {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end; 
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .profile-picture {
-    width: 220px; 
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5); /* Green Glow */
 }
 
+/* About Text */
 .about-text {
-    flex: 3; 
-    max-width: 70%; 
-    font-size: 22px; 
-    line-height: 1.6;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  max-width: 90%;
+  margin: 0 auto;
+  font-size: 16px;
+  color: white;
 }
 
   .about-text-container {
@@ -252,21 +256,23 @@ body {
     text-shadow: none;
   }
   
-  .portfolio-btn {
-    font-size: 24px; 
-    font-weight: bold;
-    padding: 15px 30px; 
-    background-color: black;
-    color: #00aaff; 
-    border: 3px solid white;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
+ /* Portfolio Button */
+.portfolio-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .portfolio-btn:hover {
-    box-shadow: 0px 0px 15px limegreen; 
-    border-color: limegreen;
+  box-shadow: 0px 0px 8px #00aaff;
+  border-color: #00aaff;
 }
 
 .portfolio-btn:active {
@@ -276,6 +282,24 @@ body {
 }
 
 @media (max-width: 768px) {
+  .about-container {
+    max-width: 90%;
+  }
+
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+  }
+
+  .about-text {
+    font-size: 14px;
+  }
+
+  .portfolio-btn {
+    width: 90%;
+    font-size: 14px;
+  }
+}
   .page {
     width: 100%;
     max-width: 100%;
@@ -312,7 +336,6 @@ body {
     text-align: center;
     width: 100%;
   }
-}
 
 @media (max-width: 480px) {
   .navbar {

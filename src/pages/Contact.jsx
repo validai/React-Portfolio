@@ -1,17 +1,11 @@
 import React, { useState } from "react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [errors, setErrors] = useState({});
 
   const validateForm = () => {
     let newErrors = {};
-
     if (!formData.name.trim()) newErrors.name = "Name is required.";
     if (!formData.email.trim()) {
       newErrors.email = "Email is required.";
@@ -27,11 +21,6 @@ const Contact = () => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
     setErrors({ ...errors, [e.target.name]: "" });
-  };
-
-  const handleBlur = (e) => {
-    // Validate when user leaves a field
-    validateForm();
   };
 
   const handleSubmit = (e) => {
@@ -56,7 +45,6 @@ const Contact = () => {
               placeholder="Your Name"
               value={formData.name}
               onChange={handleChange}
-              onBlur={handleBlur}
               className={errors.name ? "input-error" : ""}
             />
             {errors.name && <span className="error-message">{errors.name}</span>}
@@ -69,7 +57,6 @@ const Contact = () => {
               placeholder="Your Email"
               value={formData.email}
               onChange={handleChange}
-              onBlur={handleBlur}
               className={errors.email ? "input-error" : ""}
             />
             {errors.email && <span className="error-message">{errors.email}</span>}
@@ -81,7 +68,6 @@ const Contact = () => {
               placeholder="Your Message"
               value={formData.message}
               onChange={handleChange}
-              onBlur={handleBlur}
               className={errors.message ? "input-error" : ""}
             ></textarea>
             {errors.message && <span className="error-message">{errors.message}</span>}
