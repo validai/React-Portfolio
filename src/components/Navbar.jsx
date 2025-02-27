@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "..sytyles/global.css"; // Ensure this file exists
+import "../styles/global.css"; // Ensure this file exists
 
 const Navbar = () => {
   return (
