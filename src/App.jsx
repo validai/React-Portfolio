@@ -7,6 +7,7 @@ import Resume from "./pages/Resume";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import "./App.css";
+import "../styles/global.css";
 
 function App() {
   return (

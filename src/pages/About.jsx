@@ -14,7 +14,7 @@ const About = () => (
         <p><strong>I am Eric, a Junior Web Developer</strong> passionate about building <strong>innovative digital experiences</strong> that blend functionality with aesthetics. I leverage cutting-edge technologies to craft efficient, user-friendly solutions that solve real-world challenges.</p>
         <p>With a strong focus on <strong>modern development practices</strong>, I continuously refine my skills to stay ahead in the ever-evolving tech landscape. My goal is to design and develop digital solutions that leave a lasting impact.</p>
         <p><strong>Because every day, we have a chance to make a difference</strong>—it just takes that first step to change the future..</p>
-        <button className="project-btn" onClick={() => navigate("/projects")}>
+        <button className="portfolio-btn" onClick={() => navigate("/portfolio")}>
           Discover My Portfolio
         </button>
         </div>
